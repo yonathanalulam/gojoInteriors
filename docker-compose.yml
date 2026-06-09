@@ -1,0 +1,7 @@
+services:
+  gojo-interiors:
+    build: .
+    container_name: gojo-interiors
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GoJo Interiors — luxury interior design studio offering 3D visualization, interior design, ceiling and gypsum work, styling, and construction. Designing spaces, defining lifestyles." />
+  <title>GoJo Interiors — Designing Spaces, Defining Lifestyles</title>
+  <script>document.documentElement.className += " js";</script>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GoJo Interiors" />
+  <meta property="og:title" content="GoJo Interiors — Designing Spaces, Defining Lifestyles" />
+  <meta property="og:description" content="A boutique interior design studio crafting considered interiors from first visualization to final detail." />
+  <meta property="og:url" content="https://gojointeriors.com/" />
+  <meta property="og:image" content="https://gojointeriors.com/assets/img/work-1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GoJo Interiors — Designing Spaces, Defining Lifestyles" />
+  <meta name="twitter:description" content="A boutique interior design studio crafting considered interiors from first visualization to final detail." />
+  <meta name="twitter:image" content="https://gojointeriors.com/assets/img/work-1.jpg" />
+  <meta name="theme-color" content="#5c1a2b" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <link rel="stylesheet" href="assets/fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InteriorDesignService",
+    "name": "GoJo Interiors",
+    "description": "Boutique interior design studio offering 3D visualization, interior design, ceiling and gypsum design, home styling, and interior construction.",
+    "slogan": "Designing spaces, defining lifestyles.",
+    "email": "hello@gojointeriors.com",
+    "telephone": "+251923161927",
+    "url": "https://gojointeriors.com/",
+    "foundingDate": "2024",
+    "image": "https://gojointeriors.com/assets/img/work-1.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "14 Rue de l'Atelier, Suite 200",
+      "addressLocality": "Lisbon",
+      "postalCode": "1200-001",
+      "addressCountry": "PT"
+    },
+    "areaServed": "Worldwide",
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "3D Interior Visualizations" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Design" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceiling & Gypsum Designs" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Organization & Styling" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Construction" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to content</a>
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <span class="page-loader__mark">GoJo</span>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="GoJo Interiors home">
+        <span class="brand__logo" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+            <path d="M6 22.5 24 7l18 15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 21v20h28V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19 27h10v10H19z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M24 27v10M19 32h10" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 41c-3.4 0-5-2.6-5-6.5S6.6 28 10 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__name">GoJo<em>Interiors</em></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#ethos">Studio</a>
+        <a href="#contact" class="nav__cta">Start a Project</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal" data-reveal>
+          <span class="hero__eyebrow-line"></span>
+          Interior Design Studio · Est. 2024
+        </p>
+
+        <h1 class="hero__title">
+          <span class="line"><span data-reveal data-reveal-delay="1">Designing</span></span>
+          <span class="line"><span data-reveal data-reveal-delay="2">spaces,</span> <em data-reveal data-reveal-delay="3">defining</em></span>
+          <span class="line"><em data-reveal data-reveal-delay="4">lifestyles.</em></span>
+        </h1>
+
+        <div class="hero__meta reveal" data-reveal data-reveal-delay="5">
+          <p class="hero__lede">
+            A boutique studio crafting considered interiors — from the first
+            visualization to the final, lived-in detail.
+          </p>
+          <a href="#work" class="btn btn--primary">
+            View Our Work
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <a href="#services" class="hero__scroll reveal" data-reveal data-reveal-delay="6" aria-label="Scroll to services">
+        <span>Scroll</span>
+        <span class="hero__scroll-rail"><span class="hero__scroll-dot"></span></span>
+      </a>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Residential</span><span class="dot">·</span>
+        <span>Commercial</span><span class="dot">·</span>
+        <span>3D Visualization</span><span class="dot">·</span>
+        <span>Styling</span><span class="dot">·</span>
+        <span>Construction</span><span class="dot">·</span>
+        <span>Residential</span><span class="dot">·</span>
+        <span>Commercial</span><span class="dot">·</span>
+        <span>3D Visualization</span><span class="dot">·</span>
+        <span>Styling</span><span class="dot">·</span>
+        <span>Construction</span><span class="dot">·</span>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-head">
+        <p class="section-head__label reveal" data-reveal>
+          <span class="num">01</span> What We Do
+        </p>
+        <h2 class="section-head__title reveal" data-reveal data-reveal-delay="1">
+          A complete craft, <em>under one roof.</em>
+        </h2>
+      </div>
+
+      <ol class="service-list">
+        <li class="service" data-reveal>
+          <span class="service__index">01</span>
+          <div class="service__body">
+            <h3 class="service__name">3D Interior Visualizations</h3>
+            <p class="service__desc">Photoreal renders that let you walk the room before a single wall is built — material, light and proportion resolved in advance.</p>
+          </div>
+          <span class="service__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </li>
+
+        <li class="service" data-reveal data-reveal-delay="1">
+          <span class="service__index">02</span>
+          <div class="service__body">
+            <h3 class="service__name">Interior Design</h3>
+            <p class="service__desc">Full-scope concepts, layouts and material schemes — interiors composed with editorial restraint and lived-in warmth.</p>
+          </div>
+          <span class="service__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </li>
+
+        <li class="service" data-reveal data-reveal-delay="2">
+          <span class="service__index">03</span>
+          <div class="service__body">
+            <h3 class="service__name">Ceiling &amp; Gypsum Designs</h3>
+            <p class="service__desc">Sculptural ceilings, coves and recessed lighting details that give a room its quiet sense of architecture.</p>
+          </div>
+          <span class="service__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </li>
+
+        <li class="service" data-reveal data-reveal-delay="3">
+          <span class="service__index">04</span>
+          <div class="service__body">
+            <h3 class="service__name">Home Organization &amp; Styling</h3>
+            <p class="service__desc">The finishing layer — objects, textiles and order arranged so a space feels effortless and entirely yours.</p>
+          </div>
+          <span class="service__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </li>
+
+        <li class="service" data-reveal data-reveal-delay="4">
+          <span class="service__index">05</span>
+          <div class="service__body">
+            <h3 class="service__name">Interior Construction</h3>
+            <p class="service__desc">Trusted execution and site management — your design realized cleanly, on schedule, to the millimeter.</p>
+          </div>
+          <span class="service__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="work" id="work">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="section-head__label reveal" data-reveal>
+            <span class="num">02</span> Selected Work
+          </p>
+          <h2 class="section-head__title reveal" data-reveal data-reveal-delay="1">
+            Rooms with <em>a point of view.</em>
+          </h2>
+        </div>
+        <p class="section-head__note reveal" data-reveal data-reveal-delay="2">
+          A selection of recent residential and commercial projects.
+          Imagery shown is indicative.
+        </p>
+      </div>
+
+      <div class="gallery">
+        <figure class="tile tile--tall" data-reveal>
+          <img src="assets/img/work-1.jpg" alt="Warm minimalist living room with curved sofa and soft daylight" loading="lazy" />
+          <figcaption><span>Maison Aurelle</span><em>Residential · Living</em></figcaption>
+        </figure>
+
+        <figure class="tile tile--wide" data-reveal data-reveal-delay="1">
+          <img src="assets/img/work-2.jpg" alt="Elegant bedroom with layered neutral textiles" loading="lazy" />
+          <figcaption><span>The Linden Suite</span><em>Residential · Bedroom</em></figcaption>
+        </figure>
+
+        <figure class="tile" data-reveal data-reveal-delay="2">
+          <img src="assets/img/work-3.jpg" alt="Sculptural dining space with statement lighting" loading="lazy" />
+          <figcaption><span>Atelier No. 6</span><em>Commercial · Dining</em></figcaption>
+        </figure>
+
+        <figure class="tile" data-reveal data-reveal-delay="3">
+          <img src="assets/img/work-4.jpg" alt="Refined kitchen with stone island and brass detailing" loading="lazy" />
+          <figcaption><span>Slate &amp; Brass</span><em>Residential · Kitchen</em></figcaption>
+        </figure>
+
+        <figure class="tile tile--wide" data-reveal data-reveal-delay="2">
+          <img src="assets/img/work-5.jpg" alt="Open-plan interior with gypsum ceiling detail" loading="lazy" />
+          <figcaption><span>House Vellora</span><em>Residential · Open Plan</em></figcaption>
+        </figure>
+
+        <figure class="tile tile--tall" data-reveal data-reveal-delay="1">
+          <img src="assets/img/work-6.jpg" alt="Quiet study nook with bookshelves and reading chair" loading="lazy" />
+          <figcaption><span>The Reading Room</span><em>Residential · Study</em></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="ethos" id="ethos">
+      <div class="ethos__inner">
+        <p class="ethos__label reveal" data-reveal>
+          <span class="num">03</span> The Studio
+        </p>
+        <blockquote class="ethos__quote">
+          <span class="line"><span data-reveal>We treat every space as</span></span>
+          <span class="line"><em data-reveal data-reveal-delay="1">a quiet argument</em></span>
+          <span class="line"><span data-reveal data-reveal-delay="2">for how life</span> <span data-reveal data-reveal-delay="3">could feel.</span></span>
+        </blockquote>
+        <div class="ethos__grid">
+          <div class="stat reveal" data-reveal>
+            <span class="stat__num">20<sup>+</sup></span>
+            <span class="stat__label">Projects delivered</span>
+          </div>
+          <div class="stat reveal" data-reveal data-reveal-delay="1">
+            <span class="stat__num">3<sup>yrs</sup></span>
+            <span class="stat__label">Of considered practice</span>
+          </div>
+          <div class="stat reveal" data-reveal data-reveal-delay="2">
+            <span class="stat__num">1</span>
+            <span class="stat__label">Studio, end to end</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="cta__inner cta__inner--split">
+        <div class="cta__intro">
+          <p class="cta__label reveal" data-reveal>Let's begin</p>
+          <h2 class="cta__title reveal" data-reveal data-reveal-delay="1">
+            Have a space in mind?
+          </h2>
+          <p class="cta__text reveal" data-reveal data-reveal-delay="2">
+            Tell us a little about your project and we'll be in touch within two business days.
+          </p>
+          <div class="cta__direct reveal" data-reveal data-reveal-delay="3">
+            <a href="mailto:hello@gojointeriors.com" class="cta__mail">hello@gojointeriors.com</a>
+            <a href="tel:+251923161927" class="cta__phone">+251 923161927</a>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contactForm" data-reveal data-reveal-delay="2" action="mailto:hello@gojointeriors.com" method="post" enctype="text/plain" novalidate>
+          <div class="form__row">
+            <p class="field">
+              <label class="field__label" for="f-name">Name</label>
+              <input class="field__input" id="f-name" type="text" name="name" autocomplete="name" required />
+            </p>
+            <p class="field">
+              <label class="field__label" for="f-email">Email</label>
+              <input class="field__input" id="f-email" type="email" name="email" autocomplete="email" required />
+            </p>
+          </div>
+          <p class="field">
+            <label class="field__label" for="f-project">Project type</label>
+            <select class="field__input field__select" id="f-project" name="project" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Interior Design</option>
+              <option>3D Interior Visualizations</option>
+              <option>Ceiling &amp; Gypsum Designs</option>
+              <option>Home Organization &amp; Styling</option>
+              <option>Interior Construction</option>
+              <option>Something else</option>
+            </select>
+          </p>
+          <p class="field">
+            <label class="field__label" for="f-message">Tell us about your space</label>
+            <textarea class="field__input field__textarea" id="f-message" name="message" rows="4" required></textarea>
+          </p>
+          <button class="btn btn--primary form__submit" type="submit">
+            Send Inquiry
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="brand__logo brand__logo--lg" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+            <path d="M6 22.5 24 7l18 15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 21v20h28V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19 27h10v10H19z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M24 27v10M19 32h10" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 41c-3.4 0-5-2.6-5-6.5S6.6 28 10 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <p class="footer__tag">Designing spaces,<br />defining lifestyles.</p>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@gojointeriors.com">hello@gojointeriors.com</a>
+          <a href="tel:+251923161927">+251 923161927</a>
+        </div>
+        <div class="footer__col">
+          <h4>Studio</h4>
+          <address>
+            14 Rue de l'Atelier<br />
+            Design Quarter, Suite 200<br />
+            Lisbon, 1200-001
+          </address>
+        </div>
+        <div class="footer__col">
+          <h4>Follow</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="#">Behance</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__base">
+      <span>© 2026 GoJo Interiors</span>
+      <span>Designed with intent.</span>
+    </div>
+  </footer>
+
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.min.js" } }
+  </script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

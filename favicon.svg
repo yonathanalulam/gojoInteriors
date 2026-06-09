@@ -1,0 +1,10 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GoJo Interiors">
+  <rect width="48" height="48" rx="10" fill="#fbf9f7"/>
+  <g fill="none" stroke="#5c1a2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 22.5 24 9l16 13.5"/>
+    <path d="M12 21.5v18h24v-18"/>
+    <path d="M19 27h10v10H19z"/>
+    <path d="M24 27v10M19 32h10"/>
+    <path d="M12 39.5c-3 0-4.5-2.3-4.5-5.8S9 28 12 28"/>
+  </g>
+</svg>
