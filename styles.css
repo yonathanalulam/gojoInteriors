@@ -37,6 +37,12 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--paper-2); }
+::-webkit-scrollbar-thumb { background: var(--burgundy); border-radius: 100px; }
+::-webkit-scrollbar-thumb:hover { background: var(--burgundy-deep); }
+html { scrollbar-width: thin; scrollbar-color: var(--burgundy) var(--paper-2); }
+
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
 body {
