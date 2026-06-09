@@ -23,18 +23,36 @@ onScroll();
 if (navToggle && navLinks) {
   const mqMobile = window.matchMedia("(max-width: 900px)");
 
+  let savedScrollY = 0;
+
   const setMenu = (open) => {
     navLinks.classList.toggle("is-open", open);
     nav.classList.toggle("is-menu-open", open);
+    const isMobile = mqMobile.matches;
+    if (open && isMobile) {
+      savedScrollY = window.scrollY;
+      document.documentElement.classList.add("nav-open");
+      document.body.classList.add("nav-open");
+      document.body.style.top = `-${savedScrollY}px`;
+    } else {
+      document.documentElement.classList.remove("nav-open");
+      document.body.classList.remove("nav-open");
+      document.body.style.top = "";
+      window.scrollTo(0, savedScrollY);
+    }
     navToggle.setAttribute("aria-expanded", String(open));
     navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-    if (open && mqMobile.matches) {
+    if (open && isMobile) {
       const first = navLinks.querySelector("a");
       if (first) first.focus();
     }
   };
 
   navToggle.addEventListener("click", () => setMenu(!navLinks.classList.contains("is-open")));
+
+  mqMobile.addEventListener("change", () => {
+    if (!mqMobile.matches) setMenu(false);
+  });
 
   navLinks.querySelectorAll("a").forEach((a) => {
     a.addEventListener("click", () => setMenu(false));
